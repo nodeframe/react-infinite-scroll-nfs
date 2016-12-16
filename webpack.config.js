@@ -1,10 +1,10 @@
 module.exports = {
-  entry: './lib/react-loading.js',
+  entry: './lib/react-infiniteScroll.js',
   output: {
-    filename: './dist/react-loading.js',
-    sourceMapFilename: './dist/react-loading.map',
+    filename: './dist/react-infiniteScroll.js',
+    sourceMapFilename: './dist/react-infiniteScroll.map',
     libraryTarget: 'umd',
-    library: 'Loading'
+    library: 'infiniteScroll'
   },
   externals: [{
     react: {
@@ -16,7 +16,13 @@ module.exports = {
   }],
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'babel-loader'},
+      {
+        test: /\.js$/, loader: 'babel-loader',       
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },
       {test: /\.svg$/, loader: 'raw-loader'}
     ]
   }

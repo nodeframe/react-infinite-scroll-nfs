@@ -1,44 +1,32 @@
-# react-loading
+#React Infinite Scroll
 
-Easy to use loading animations for React projects. Uses SVG animations from Brent Jackson's [loading](https://github.com/jxnblk/loading) project.
+##Getting started
+install using this command;
 
-## Installation
+    npm install react-infinte-scroll
 
-```
-npm install react-loading
-```
 
-## Demo
+###Example
+```js
+  Import InfiniteScroll  from 'react-infinite-scroll'
 
-http://cezary.github.io/react-loading/
-
-## Loading Types
-
-* blank
-* balls
-* bars
-* bubbles
-* cubes
-* cylon
-* spin
-* spinningBubbles
-* spokes
-
-## Example
-
-```javascript
-var React = require('react');
-var Loading = require('react-loading');
-
-var Component = React.createClass({
-  render: function() {
-    return (
-      <Loading type='balls' color='#e3e3e3' />
-    );
-  }
-});
+  <div> // <-- Set height in CSS.
+    <InfiniteScroll
+      onLoad={Function}
+      isFetching={true}
+    >
+      {items} // <-- This is the "stuff" you want to load
+    </InfiniteScroll>
+  </div>
 ```
 
-## License
+####Props
+   - `onLoad` : This function is called when the user scrolls down and we need to load stuff.
 
-MIT
+   - `isFetching` :  Set true or  false to handle show hide  LoaderComponent.
+
+   - `loaderComponent` :  Component loader
+
+   - `styleScrollBarClass` : Set style scroll bar
+
+   - `offsetHeight` : Set offset height
