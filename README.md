@@ -3,12 +3,12 @@
 ##Getting started
 install using this command;
 
-    npm install react-infinte-scroll
+    npm install react-infinite-scroll-nfs
 
 
 ###Example
 ```js
-  Import InfiniteScroll  from 'react-infinite-scroll'
+  Import InfiniteScroll  from 'react-infinite-scroll-nfs'
 
   <div> // <-- Set height in CSS.
     <InfiniteScroll
