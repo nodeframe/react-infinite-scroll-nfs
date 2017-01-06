@@ -1,6 +1,6 @@
 {
   "name": "react-infinite-scroll-nfs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React infiniteScroll component",
   "main": "dist/react-infinite-scroll-nfs.js",
   "scripts": {
@@ -22,11 +22,11 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodeframe/react-infinite-scroll-nfs.git"
+    "url": "git+https://github.com/nodemolar/react-infinite-scroll-nfs.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/nodeframe/react-infinite-scroll-nfs/issues"
+    "url": "https://github.com/nodemolar/react-infinite-scroll-nfs/issues"
   },
-  "homepage": "https://github.com/nodeframe/react-infinite-scroll-nfs#readme"
+  "homepage": "https://github.com/nodemolar/react-infinite-scroll-nfs#readme"
 }
