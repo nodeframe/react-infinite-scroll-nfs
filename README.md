@@ -1,32 +1,36 @@
 #React Infinite Scroll
+React component for infinite scroll container.
 
 ##Getting started
-install using this command;
+#####Install
+    npm install react-infinite-scroll
 
-    npm install react-infinite-scroll-nfs
-
-
-###Example
+#####Usage
 ```js
-  Import InfiniteScroll  from 'react-infinite-scroll-nfs'
-
-  <div> // <-- Set height in CSS.
-    <InfiniteScroll
-      onLoad={Function}
-      isFetching={true}
-    >
-      {items} // <-- This is the "stuff" you want to load
-    </InfiniteScroll>
-  </div>
+  import InfiniteScroll  from 'react-infinite-scroll';
 ```
 
-####Props
-   - `onLoad` : This function is called when the user scrolls down and we need to load stuff.
+```html
+ <div> // <-- Parent panel that have specific height.
+    <InfiniteScroll
+      onLoad={this.onLoad}
+      isFetching={true}
+    >
+      .... // <-- This is the "stuffs" you want to load by infinite scroll
+    </InfiniteScroll>
+ </div>
+```
 
-   - `isFetching` :  Set true or  false to handle show hide  LoaderComponent.
+##Configuration Props
+   - **Function** `onLoad` : Function that will be called when the scroll is at the position related to offsetHeight
 
-   - `loaderComponent` :  Component loader
+   - **Boolean** `isFetching` : Set true/false to show/hide LoaderComponent.
 
-   - `styleScrollBarClass` : Set style scroll bar
+   - **React Component**`loaderComponent` :  Component loader will be shown related to isFetching props.
 
-   - `offsetHeight` : Set offset height
+   - **String** `styleScrollBarClass` : CSS class name for scroll bar style.
+
+   - **Number** `offsetHeight | (default) 50`  : Offset height from bottom to specific when the onLoad function will be activated.
+
+##License
+MIT.
