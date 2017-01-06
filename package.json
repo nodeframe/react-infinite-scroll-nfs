@@ -1,6 +1,6 @@
 {
   "name": "react-infinite-scroll-nfs",
-  "version": "1.0",
+  "version": "0.0.3",
   "description": "React infiniteScroll component",
   "main": "dist/react-infinite-scroll-nfs.js",
   "scripts": {
