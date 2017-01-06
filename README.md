@@ -2,16 +2,16 @@
 React component for infinite scroll container.
 
 ##Getting started
-#####Install
+####Install
     npm install react-infinite-scroll
 
-#####Usage
+####Usage
 ```js
   import InfiniteScroll  from 'react-infinite-scroll';
 ```
 
 ```html
- <div> // <-- Parent panel that have specific height.
+ <div> // <-- Parent panel that have specific height (can be px, %).
     <InfiniteScroll
       onLoad={this.onLoad}
       isFetching={true}
@@ -26,7 +26,7 @@ React component for infinite scroll container.
 
    - **Boolean** `isFetching` : Set true/false to show/hide LoaderComponent.
 
-   - **React Component**`loaderComponent` :  Component loader will be shown related to isFetching props.
+   - **React Component**`loaderComponent` :  Component loader that will be shown related to isFetching props.
 
    - **String** `styleScrollBarClass` : CSS class name for scroll bar style.
 
